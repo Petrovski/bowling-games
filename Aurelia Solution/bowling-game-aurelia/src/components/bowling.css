@@ -1,0 +1,105 @@
+* {
+  margin: auto 0;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container h1 {
+  font-size: 48px;
+}
+
+.container button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: #0e83cd;
+  cursor: pointer;
+  padding: 25px 60px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.container button:hover {
+  color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.container button:active {
+  transform: scale(0.8);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.roll-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.frame-message {
+  font-size: 32px;
+  margin: 20px 0px 20px 0px;
+}
+
+.frames {
+  margin: 20px;
+}
+
+.frames div {
+  position: relative;
+  display: inline-flex;
+  border: 1px solid black;
+  padding: 30px;
+  font-size: 24px;
+}
+
+.frames .roll-one {
+  position: absolute;
+  width: 20px;
+  top: 0px;
+  right: 20px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.frames .roll-two {
+  position: absolute;
+  width: 20px;
+  top: 0px;
+  right: 0px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.frames .roll-three {
+  position: absolute;
+  width: 20px;
+  top: 20px;
+  right: 0px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.frame-score {
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.reset-btn {
+  background: rgb(187, 184, 184) !important;
+}

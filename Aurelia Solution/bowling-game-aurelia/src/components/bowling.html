@@ -1,0 +1,28 @@
+<template>
+  <div class="container">
+    <h1>Score: ${score}</h1>
+    <button class="roll-btn" click.delegate="roll()" disabled.bind="gameOver">
+      ${rollMessage}
+    </button>
+    <p class="frame-message">${frameMessage}</p>
+    <div class="reset-game" if.bind="gameOver">
+      <button class="reset-btn" click.delegate="resetGame()">
+        Reset Game?
+      </button>
+    </div>
+    <div class="frames">
+      <div class="roll-frame" repeat.for="roll of rolls">
+        <span class="roll-one" if.bind="roll[0] !== 10">${roll[0]}</span>
+        <span class="roll-two" if.bind="roll[0] + roll[1] !== 10"
+          >${roll[1]}</span
+        >
+        <span class="roll-two" if.bind="roll[0] + roll[1] === 10">/</span>
+        <span class="roll-one" if.bind="roll[0] === 10">&nbsp;</span>
+        <span class="roll-two" if.bind="roll[0] === 10 && roll[1] === 0"
+          >X</span
+        >
+        <span class="frame-score">${roll[2]}</span>
+      </div>
+    </div>
+  </div>
+</template>
